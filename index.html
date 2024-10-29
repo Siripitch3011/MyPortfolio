@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siripitch Chaiyabutra Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS -->
+    <script src="popup.js" defer></script> <!-- JavaScript Pop-up -->
+</head>
+<body>
+
+    <header>
+        <h1>Siripitch Chaiyabutra</h1>
+        <p>Welcome to my portfolio</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello, I’m Siripitch Chaiyabutra, a Computer Engineering student at King Mongkut's University of Technology Thonburi (KMUTT). As a first-year student, I’m excited to explore a field that combines creativity and problem-solving with endless opportunities for learning and innovation. My studies are building a foundation in software development, hardware design, and systems engineering, and I’m eager to understand how these areas come together to shape technology.</p>
+                <p>I’m particularly interested in hands-on projects that let me see the practical impact of technology—whether it’s developing efficient code, working with hardware components, or creating secure, reliable systems. I love tackling new challenges and applying what I learn in real-world scenarios.</p>
+                <p>Beyond my coursework, I’m a big believer in collaboration and knowledge-sharing. I enjoy working with peers on projects, learning from experienced mentors, and participating in challenges or group discussions. Each experience adds new perspectives and helps me grow as both a student and an engineer.</p>
+            </div>
+            <div class="about-images">
+                <div class="about-image"><img src="pic/pic1.jpg" alt="Your Image 1" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic2.jpg" alt="Your Image 2" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic3.jpg" alt="Your Image 3" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic4.jpg" alt="Your Image 4" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic5.jpg" alt="Your Image 1" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic6.jpg" alt="Your Image 2" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic7.jpg" alt="Your Image 3" onclick="openPopup(this)"></div>
+                <div class="about-image"><img src="pic/pic8.jpg" alt="Your Image 4" onclick="openPopup(this)"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+            <img id="popupImage" src="" alt="Popup Image">
+        </div>
+    </div>
+    
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>Currently studying for a bachelor's degree in Computer Engineering at King Mongkut's University of Technology Thonburi (KMUTT).</p>
+        <p>Relevant coursework includes:</p>
+        <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Database Management Systems</li>
+            <li>Software Engineering</li>
+            <li>Embedded Systems</li>
+        </ul>
+        
+        <h4>Punjadee School</h4>
+        <ul>
+            <li>
+                <strong>Sciences and Mathematics Program (2018 - 2023)</strong><br>
+                Secretary of the student council (2022)<br>
+                Member of Computer Club<br>
+                GPAX: 4.00
+            </li>
+        </ul>
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>Programming Skills</h3>
+            <p>Programming Languages: Basic of C, CSS, Python, HTML.</p>
+        </div>
+        <div class="skill">
+            <h3>Problem-Solving and Analytical Skills</h3>
+            <p>Critical Thinking, Analytical Thinking</p>
+        </div>
+        <div class="skill">
+            <h3>Communication Skills</h3>
+            <p>Active Listening, Verbal Communication, Written Communication</p>
+        </div>
+        <div class="skill">
+            <h3>Teamwork and Collaboration</h3>
+            <p>Working in Teams, Conflict Resolution, Flexibility</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can contact me at:</p>
+        <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:siripitch.chai@mail.kmutt.ac.th">siripitch.chai@mail.kmutt.ac.th</a></li>
+            <li><strong>Phone:</strong> 0951896543</li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/siripitch.chaiyaputra" target="_blank">@Siripitch Chaiyabutra</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/pps_ping/" target="_blank">@pps_ping</a></li>
+            <li><strong>Address:</strong> 378/116-117 Bannakarn Road, Nai-Muang, Muang District, Chaiyaphum 36000, Thailand</li>
+        </ul>
+    </section>
+
+</body>
+</html>
